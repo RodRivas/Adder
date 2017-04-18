@@ -23,19 +23,9 @@ namespace WindowsFormsApplication2
 
             double valor1 = Convert.ToDouble(textBox1.Text);
             double valor2 = Convert.ToDouble(textBox2.Text);
-            //  double valor1 = double.Parse("");
-            // condicional a seguir:  tentativa de filtrar valores de entrada
-            // não permitindo valores de tipo string por exemplo
-           if (valor1 == null)            {
-                // Message.ToString(valor1);                
-                Console.Beep(440,2000);  
-                Console.WriteLine("Is Valid");
-                
-            } 
             double resultado = valor1 + valor2;
             textBox3.Text = Convert.ToString(resultado);
             label1.Text = Convert.ToString(resultado);
-            //textBox1.Clear();     
             label2.Show();
         }
 
